@@ -1,5 +1,4 @@
-FROM debian:12.2-slim
-MAINTAINER Niema Moshiri <niemamoshiri@gmail.com>
+FROM debian:stable-slim
 RUN apt-get update && \
     apt-get install -y --no-install-recommends g++ gcc gdb make python3 python3-pip valgrind && \
     pip install --break-system-packages --no-cache-dir networkx treeswift && \

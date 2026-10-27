@@ -1,6 +1,6 @@
 FROM debian:stable-slim
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends g++ gcc gdb make python3 python3-pip valgrind && \
+    apt-get install -y --no-install-recommends g++ gcc gdb make python3 python3-pip time valgrind && \
     pip install --break-system-packages --no-cache-dir networkx treeswift && \
     apt-get autoremove -y && \
     apt-get purge -y --auto-remove && \
